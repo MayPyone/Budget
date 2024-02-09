@@ -8,7 +8,7 @@ RSpec.describe Group, type: :model do
     end
 
     it 'has many entities' do
-      association = Group.reflect_on_association(:entities)
+      association = Group.reflect_on_association(:payments)
       expect(association.macro).to eq(:has_many)
     end
   end

@@ -14,12 +14,12 @@ RSpec.describe 'Groups', type: :request do
 
   describe 'GET /index' do
     it 'return success index page' do
-      get group_entities_path(@group)
+      get group_payments_path(@group)
       follow_redirect!
       expect(response).to have_http_status(:success)
     end
     it 'return success create page' do
-      get new_group_entity_path(@group)
+      get new_group_payment_path(@group)
       follow_redirect!
       expect(response).to have_http_status(:success)
     end
