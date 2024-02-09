@@ -69,7 +69,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter = :resque
-  # config.active_job.queue_name_prefix = "budget_tracker_production"
+  # config.active_job.queue_name_prefix = "my_blog_production"
 
   config.action_mailer.perform_caching = false
 
@@ -86,6 +86,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  config.action_mailer.delivery_method = :smtp
 
   # Enable DNS rebinding protection and other `Host` header attacks.
   # config.hosts = [
@@ -94,4 +95,5 @@ Rails.application.configure do
   # ]
   # Skip DNS rebinding protection for the default health check endpoint.
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
+  config.action_mailer.default_url_options = { host: "localhost:3000" }
 end
