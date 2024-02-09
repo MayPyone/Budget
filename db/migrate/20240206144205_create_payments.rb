@@ -1,7 +1,7 @@
-class CreateEntities < ActiveRecord::Migration[7.1]
+class CreatePayments< ActiveRecord::Migration[7.1]
   def change
-    create_table :entities do |t|
-      t.string :entity_name 
+    create_table :payments do |t|
+      t.string :payment_name 
       t.decimal :amount
       t.references :user, null: false, foreign_key: true
       t.timestamps

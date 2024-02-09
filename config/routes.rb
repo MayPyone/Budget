@@ -11,6 +11,6 @@ Rails.application.routes.draw do
    
   resources :splash
   resources :groups do
-    resources :entities
+    resources :payments
   end
 end

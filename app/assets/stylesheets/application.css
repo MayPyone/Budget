@@ -1,5 +1,22 @@
+@font-face {
+  font-family: 'proximanova';
+  src: url('/assets/fonts/Fontspring-DEMO-proximanovacond-lightit.otf') format('woff2');
+}
+
+@font-face {
+  font-family: 'proximanova-bold';
+  src: url('/assets/fonts/Fontspring-DEMO-proximanovacond-boldit.otf') format('woff2');
+}
+
 body {
   background-color: #f8f8ff !important;
+  font-family: 'proximanova', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'proximanova-bold', sans-serif;
 }
 
 .splash-title {
