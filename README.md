@@ -8,6 +8,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -54,6 +55,13 @@
 - **[Add groups]**
 - **[Add Entries]**
 - **[Display groups and entries]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://mybudget-shzp.onrender.com)
+- [Video Link](https://www.loom.com/share/d467834ce70342349321fc1ef5eeb2ac?sid=9af5e4d7-67d7-4edc-9c4f-cd3e423a4b31)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
