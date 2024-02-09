@@ -74,17 +74,9 @@ i {
   margin: 2%;
   background-color: white;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   color: #434b54;
   font-size: 19px;
-}
-
-.group-index .modal-body {
-  margin: 2% 3%;
-  background-color: white;
-  display: grid;
-  grid-template-columns: 20% 60% 20%;
-  padding: 3%;
 }
 
 .container-fluid h2 {
@@ -150,4 +142,8 @@ i {
   margin: 4%;
   background-color: white;
   padding: 2%;
+}
+
+.back {
+  color: white;
 }
