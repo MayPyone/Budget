@@ -5,7 +5,7 @@ databases:
     plan: free
 services:
   - type: web
-    name: maypyone
+    name: budgettracker
     runtime: ruby
     plan: free
     buildCommand: "./bin/render-build.sh"
