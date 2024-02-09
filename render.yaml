@@ -1,6 +1,6 @@
 databases:
   - name: Budget-tracker
-    databaseName: Budget-tracker
+    databaseName: Budget_tracker
     user: maypyone
     plan: free
 services:
