@@ -5,12 +5,12 @@
       <h2>Groups</h2>
   </nav>
   </div>
-  
+  <% if @groups %>
   <% @groups.each do |group| %>
     <%= link_to group_path(group) do %>
       <div class='inner'>
     <div class="modal-body">
-     
+      
       <div class='icons'><%= content_tag :i, "", class: "fa #{group.icon}" %></div>
       <div><%= link_to "#{group.group_name}", group_payments_path(group), class: 'no-underline' %></div>
       <div><%= "$" "#{group.total_amount}" %></div>
@@ -19,7 +19,10 @@
     <% end %>
   <% end %>
  
-  
+  <% else %>
+  <p>Group not found</p>
+<% end %>
+
   <div class="add">
       <button> <%= link_to 'Add Group', new_group_path , class: 'add-underline' %> </button>
   </div>

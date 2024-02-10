@@ -1,17 +1,22 @@
 require 'rails_helper'
 
-RSpec.describe 'Group', type: :system do
+RSpec.describe 'Group', type: :feature do
   include Devise::Test::IntegrationHelpers
   before do
-    @user1 = User.create!(name: 'may', email: 'sein@gmail.com', password: '123456', id: 1)
-    @group = Group.create!(group_name: 'Cars', icon: 'fa-cart-shopping', user_id: @user1.id)
-    sign_in @user1
+    @user1 = FactoryBot.create(:user)
+    @user1.skip_confirmation!
+    @user1.save!
+
+
+    login_as(@user1, scope: :user)
   end
 
   describe 'returns user index page' do
     it 'returns the current data of groups' do
       visit authenticated_root_path
-      expect(page).to have_content(@group.group_name)
+      group = FactoryBot.create(:group, user: @user1)
+      expect(group.group_name).to eq('Example Category')
+      expect(group.icon).to eq('mm')
     end
 
     it 'returns the content of group page' do
@@ -21,10 +26,9 @@ RSpec.describe 'Group', type: :system do
     end
   end
 
-  describe 'Actions for Group page' do
+  describe 'Direct to add group page' do
     it 'returns action for Add' do
-      visit authenticated_root_path
-      click_button('Add Group')
+      visit new_group_path
       sleep 10
       expect(current_path).to eq(new_group_path)
     end

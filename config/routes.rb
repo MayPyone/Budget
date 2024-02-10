@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   resources :groups do
     resources :payments
   end
+
+  root 'groups#index'
 end

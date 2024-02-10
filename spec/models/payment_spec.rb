@@ -9,7 +9,7 @@ RSpec.describe Payment, type: :model do
 
     it 'has many entities' do
       association = Payment.reflect_on_association(:groups)
-      expect(association.macro).to eq(:has_many)
+      expect(association.macro).to eq(:has_and_belongs_to_many)
     end
   end
 end
