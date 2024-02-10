@@ -61,7 +61,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://budget-tracker-for-you.onrender.com)
-- [Video Link](https://www.loom.com/share/d467834ce70342349321fc1ef5eeb2ac?sid=9af5e4d7-67d7-4edc-9c4f-cd3e423a4b31)
+- [Video Link](https://www.loom.com/share/fe30a9a6e4524ad2b729f509676f9fb0?sid=24767430-51a7-4365-ac15-caff420ff265)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,7 +130,7 @@ To run tests, run the following command:
 👤 **May Pyone**
 
 - GitHub: [@May Pyone](https://github.com/MayPyone/)
-- LinkedIn: [May Pyone](https://www.loom.com/share/fe30a9a6e4524ad2b729f509676f9fb0?sid=24767430-51a7-4365-ac15-caff420ff265)
+- LinkedIn: [May Pyone](https://www.linkedin.com/in/may-pyone-9439961a3/)
 
 <!-- FUTURE FEATURES -->
 
