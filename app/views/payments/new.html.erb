@@ -10,10 +10,10 @@
  
   </div>
   </nav>
-<%= form_with model: [@group, @entity], url: group_entities_path(@group),  html: {class:"add-group"} do |form| %>
+<%= form_with model: [@group, @payment], url: group_payments_path(@group),  html: {class:"add-group"} do |form| %>
   <div class="input-field">
-    <%= form.label :entity_name %>
-    <%= form.text_field :entity_name, placeholder: "entity", required: true %>
+    <%= form.label :payment_name %>
+    <%= form.text_field :payment_name, placeholder: "payment", required: true %>
   </div>
   <br>
 
@@ -23,7 +23,7 @@
   </div>
 
   <br>
-  <%= form.hidden_field :group_id, value: @entity.group_id %>
+  <%= form.hidden_field :group_id, value: @payment.group_id %>
   <div class="create-group">
     <%= form.submit "Create Entity" %>
   </div>

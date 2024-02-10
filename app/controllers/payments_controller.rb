@@ -1,22 +1,23 @@
-class EntitiesController < ApplicationController
+class PaymentsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_group, only: %i[index new create]
 
   def index
     @group = Group.find(params[:group_id])
-    @entities = @group.entities
+    @payments = @group.payments.order(created_at: :desc)
+    @total_amount = @payments.sum(:amount)
   end
 
   def new
-    @entity = @group.entities.build
+    @payment = @group.payments.build
     @groups = current_user.groups
   end
 
   def create
-    @entity = current_user.entities.build(entity_params)
+    @payment = current_user.payments.build(payment_params)
     @groups = current_user.groups
     @group = Group.find(params[:group_id])
-    if @entity.save
+    if @payment.save
       redirect_to group_path(@group)
     else
       render :new
@@ -26,8 +27,8 @@ class EntitiesController < ApplicationController
 
   private
 
-  def entity_params
-    params.require(:entity).permit(:entity_name, :amount, :group_id)
+  def payment_params
+    params.require(:payment).permit(:payment_name, :amount, :group_id)
   end
 
   def set_group

@@ -1,5 +1,5 @@
 class Group < ApplicationRecord
-  has_many :entities, dependent: :destroy
+  has_many :payments, dependent: :destroy
   belongs_to :user
   validates :group_name, presence: true
   validates :icon, presence: true
@@ -17,6 +17,6 @@ class Group < ApplicationRecord
   }.freeze
 
   def total_amount
-    entities.sum(:amount)
+    payments.sum(:amount)
   end
 end

@@ -5,7 +5,7 @@ require_relative '../config/environment'
 # Prevent database truncation if the environment is production
 abort('The Rails environment is running in production mode!') if Rails.env.production?
 require 'rspec/rails'
-# Add additional requires below th is line. Rails is not loaded until this point!
+# Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
@@ -32,11 +32,7 @@ end
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{Rails.root}/spec/fixtures"
-  # config.include Devise::Test::IntegrationHelpers, type: :request
-  config.before(:each, type: :mailer) do
-    # Set the default URL options for the mailer in the test environment
-    Rails.application.routes.default_url_options[:host] = 'localhost:3000'
-  end
+
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
   # instead of true.
