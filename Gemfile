@@ -1,17 +1,15 @@
 source 'https://rubygems.org'
 
 ruby '3.2.2'
-<<<<<<< HEAD
-=======
 gem 'font-awesome-sass', '~> 6.5.1'
 gem 'rubocop', '>= 1.0', '< 2.0'
->>>>>>> 8b9177ecf4f153e9d4811769cacbcbb4b66e2b2f
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.1.2'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
+
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
 
@@ -50,13 +48,9 @@ gem 'bootsnap', require: false
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-<<<<<<< HEAD
-  gem 'debug', platforms: %i[mri windows]
-=======
   gem 'capybara'
   gem 'factory_bot_rails'
   gem 'letter_opener'
->>>>>>> 8b9177ecf4f153e9d4811769cacbcbb4b66e2b2f
   gem 'rspec-rails'
   gem 'webdrivers'
 end
@@ -67,16 +61,6 @@ group :development do
 end
 
 group :test do
-<<<<<<< HEAD
-  gem 'capybara'
-  gem 'database_cleaner'
-  gem 'selenium-webdriver'
-end
-
-gem 'rubocop', '>= 1.0', '< 2.0'
-
-gem 'devise', '~> 4.9'
-=======
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'database_cleaner'
   gem 'faker'
@@ -84,4 +68,3 @@ gem 'devise', '~> 4.9'
 end
 
 gem 'devise'
->>>>>>> 8b9177ecf4f153e9d4811769cacbcbb4b66e2b2f
