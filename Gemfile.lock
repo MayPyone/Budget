@@ -115,8 +115,6 @@ GEM
     drb (2.2.0)
       ruby2_keywords
     erubi (1.12.0)
-<<<<<<< HEAD
-=======
     factory_bot (6.4.6)
       activesupport (>= 5.0.0)
     factory_bot_rails (6.4.3)
@@ -127,7 +125,6 @@ GEM
     ffi (1.16.3-x64-mingw-ucrt)
     font-awesome-sass (6.5.1)
       sassc (~> 2.0)
->>>>>>> 8b9177ecf4f153e9d4811769cacbcbb4b66e2b2f
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -137,7 +134,7 @@ GEM
       activesupport (>= 6.0.0)
       railties (>= 6.0.0)
     io-console (0.6.0)
-    irb (1.10.1)
+    irb (1.9.1)
       rdoc
       reline (>= 0.3.8)
     jbuilder (2.11.5)
@@ -176,14 +173,11 @@ GEM
     nio4r (2.7.0)
     nokogiri (1.15.5-x64-mingw-ucrt)
       racc (~> 1.4)
-    nokogiri (1.15.5-x86_64-linux)
-      racc (~> 1.4)
     orm_adapter (0.5.0)
-    parallel (1.23.0)
-    parser (3.2.2.4)
+    parallel (1.24.0)
+    parser (3.3.0.5)
       ast (~> 2.4.1)
       racc
-    pg (1.5.4)
     pg (1.5.4-x64-mingw-ucrt)
     pry (0.14.2)
       coderay (~> 1.1)
@@ -233,9 +227,9 @@ GEM
       zeitwerk (~> 2.6)
     rainbow (3.1.1)
     rake (13.1.0)
-    rdoc (6.6.1)
+    rdoc (6.6.0)
       psych (>= 4.0.0)
-    regexp_parser (2.8.3)
+    regexp_parser (2.8.2)
     reline (0.4.1)
       io-console (~> 0.5)
     responders (3.1.1)
@@ -258,17 +252,12 @@ GEM
       rspec-expectations (~> 3.12)
       rspec-mocks (~> 3.12)
       rspec-support (~> 3.12)
-<<<<<<< HEAD
-    rspec-support (3.12.1)
-    rubocop (1.58.0)
-=======
     rspec-support (3.13.0)
     rubocop (1.60.2)
->>>>>>> 8b9177ecf4f153e9d4811769cacbcbb4b66e2b2f
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
-      parser (>= 3.2.2.4)
+      parser (>= 3.3.0.2)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
       rexml (>= 3.2.5, < 4.0)
@@ -280,13 +269,9 @@ GEM
     ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
-<<<<<<< HEAD
-    selenium-webdriver (4.16.0)
-=======
     sassc (2.4.0)
       ffi (~> 1.9)
     selenium-webdriver (4.10.0)
->>>>>>> 8b9177ecf4f153e9d4811769cacbcbb4b66e2b2f
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
@@ -308,7 +293,7 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    tzinfo-data (1.2023.3)
+    tzinfo-data (1.2024.1)
       tzinfo (>= 1.0.0)
     unicode-display_width (2.5.0)
     warden (1.2.9)
@@ -318,13 +303,10 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-<<<<<<< HEAD
-=======
     webdrivers (5.3.1)
       nokogiri (~> 1.6)
       rubyzip (>= 1.3.0)
       selenium-webdriver (~> 4.0, < 4.11)
->>>>>>> 8b9177ecf4f153e9d4811769cacbcbb4b66e2b2f
     webrick (1.8.1)
     websocket (1.2.10)
     websocket-driver (0.7.6)
@@ -336,29 +318,20 @@ GEM
 
 PLATFORMS
   x64-mingw-ucrt
-  x86_64-linux
 
 DEPENDENCIES
   bootsnap
   capybara
   database_cleaner
-<<<<<<< HEAD
-  debug
-  devise (~> 4.9)
-=======
   devise
   factory_bot_rails
   faker
   font-awesome-sass (~> 6.5.1)
->>>>>>> 8b9177ecf4f153e9d4811769cacbcbb4b66e2b2f
   importmap-rails
   jbuilder
   letter_opener
   pg (~> 1.1)
-<<<<<<< HEAD
-=======
   pry
->>>>>>> 8b9177ecf4f153e9d4811769cacbcbb4b66e2b2f
   puma (>= 5.0)
   rails (~> 7.1.2)
   rspec-rails
@@ -368,9 +341,10 @@ DEPENDENCIES
   turbo-rails
   tzinfo-data
   web-console
+  webdrivers
 
 RUBY VERSION
    ruby 3.2.2p53
 
 BUNDLED WITH
-   2.4.22
+   2.4.21
