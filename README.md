@@ -60,7 +60,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://mybudget-shzp.onrender.com)
+- [Live Demo Link](https://budget-tracker-for-you.onrender.com)
 - [Video Link](https://www.loom.com/share/d467834ce70342349321fc1ef5eeb2ac?sid=9af5e4d7-67d7-4edc-9c4f-cd3e423a4b31)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
