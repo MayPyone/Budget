@@ -130,7 +130,7 @@ To run tests, run the following command:
 👤 **May Pyone**
 
 - GitHub: [@May Pyone](https://github.com/MayPyone/)
-- LinkedIn: [May Pyone](https://www.linkedin.com/in/may-pyone-9439961a3/)
+- LinkedIn: [May Pyone](https://www.loom.com/share/fe30a9a6e4524ad2b729f509676f9fb0?sid=24767430-51a7-4365-ac15-caff420ff265)
 
 <!-- FUTURE FEATURES -->
 
