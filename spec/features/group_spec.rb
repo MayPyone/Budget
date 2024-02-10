@@ -6,8 +6,6 @@ RSpec.describe 'Group', type: :feature do
     @user1 = FactoryBot.create(:user)
     @user1.skip_confirmation!
     @user1.save!
-
-
     login_as(@user1, scope: :user)
   end
 
